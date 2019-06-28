@@ -19,6 +19,7 @@ public class CrudController {
     }
 
     @DeleteMapping(path = {"/{id}"})
+//    @GetMapping(path = {"/{id}"})
     public User deleteUser(@PathVariable("id") Long id) {
         User delUser = usersList.stream()
                 .filter(user -> user.getId().equals(id))

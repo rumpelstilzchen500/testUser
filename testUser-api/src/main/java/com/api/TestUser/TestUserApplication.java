@@ -10,5 +10,4 @@ public class TestUserApplication extends WebMvcConfigurationSupport {
     public static void main(String[] args) {
         SpringApplication.run(TestUserApplication.class, args);
     }
-
 }

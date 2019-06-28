@@ -1,13 +1,14 @@
 package com.api.TestUser.model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-//@Entity(name = "User")
-//@Table(name = "users")
-//@NoArgsConstructor
+@Entity(name = "User")
+@Table(name = "users")
+@NoArgsConstructor
 //@AllArgsConstructor
 @Getter
 @Setter
