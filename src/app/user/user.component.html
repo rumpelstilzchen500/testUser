@@ -1,14 +1,22 @@
-<table border="1">
-  <thead></thead>
-  <tr>
-    <th>name</th>
-    <th>surname</th>
-  </tr>
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead></thead>
+    <tr>
+      <td>ID</td>
+      <th>NAME</th>
+      <th>SURNAME</th>
+      <th>Button for delete</th>
+    </tr>
 
-  <tbody>
-  <tr *ngFor="let user of users">
-    <td>{{user.name}}</td>
-    <td>{{user.surname}}</td>
-  </tr>
-  </tbody>
-</table>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.surname}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
